@@ -9,6 +9,4 @@ var pool = new Pool({
     password: process.env.DB_PASS,
     port: process.env.DB_PORT
 });
-module.exports = {
-    pool: pool
-};
+module.exports = pool;
