@@ -37,22 +37,22 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var pool = require('../conexionBD');
-var GetUnicoEmpleo = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var id, Empleo;
+var GetCursoId = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var id, Cursos;
     return __generator(this, function (_a) {
         id = parseInt(req.params.id);
-        pool.query("SELECT * FROM \"Empleos\" WHERE \"Empleos\".\"idEmpleo\" = $1", [id], function (err, respuesta) {
+        pool.query("SELECT * FROM \"Curso\" WHERE \"Curso\".\"idcurso\" = $1", [id], function (err, respuesta) {
             if (err) {
                 console.log(err);
                 return;
             }
-            Empleo = respuesta.rows;
-            console.log(Empleo);
-            res.send(JSON.stringify(Empleo));
+            Cursos = respuesta.rows;
+            console.log(Cursos);
+            res.send(JSON.stringify(Cursos));
         });
         return [2 /*return*/];
     });
 }); };
 module.exports = {
-    GetUnicoEmpleo: GetUnicoEmpleo
+    GetCursoId: GetCursoId
 };

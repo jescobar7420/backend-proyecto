@@ -1,4 +1,4 @@
-import { Empleo } from "../Empleo";
+import { Empleo } from "../interfaces/Empleo";
 
 const pool = require('../conexionBD');
 

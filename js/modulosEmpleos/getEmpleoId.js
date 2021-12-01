@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var pool = require('../conexionBD');
-var GetUnicoEmpleo = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+var GetEmpleoId = function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var id, Empleo;
     return __generator(this, function (_a) {
         id = parseInt(req.params.id);
@@ -54,5 +54,5 @@ var GetUnicoEmpleo = function (req, res) { return __awaiter(void 0, void 0, void
     });
 }); };
 module.exports = {
-    GetUnicoEmpleo: GetUnicoEmpleo
+    GetEmpleoId: GetEmpleoId
 };
